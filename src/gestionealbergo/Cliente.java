@@ -74,6 +74,13 @@ public class Cliente {
 		this.cellulare = cellulare;
 	}
 
+
+	
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", cognome=" + cognome + ", email="+ email + ", cellulare=" + cellulare + "]";
+	}
+
 	
 
 }

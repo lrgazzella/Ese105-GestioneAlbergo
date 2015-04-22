@@ -17,6 +17,9 @@ public class Ese105 {
 		String richieste = "TV 50''";
 		int numeroNotti = 4;
 		Prenotazione prenotazione = new Prenotazione(arrivoIl, effettuataIl, clienteArrivaIl, richieste, numeroNotti);
+		prenotazione.setCliente(lorenzo);
+		prenotazione.setCamera(cameraSingola);
+		cameraSingola.addPrenotazione(prenotazione);
 		
 		Albergo albergo = new Albergo();
 		
