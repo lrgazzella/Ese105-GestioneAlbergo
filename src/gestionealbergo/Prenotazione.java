@@ -28,56 +28,66 @@ public class Prenotazione {
 	public LocalDateTime getArrivoIl() {
 		return arrivoIl;
 	}
-
-
 	public void setArrivoIl(LocalDateTime arrivoIl) {
 		this.arrivoIl = arrivoIl;
 	}
 
-
 	public LocalDateTime getEffettuataIl() {
 		return effettuataIl;
 	}
-
-
 	public void setEffettuataIl(LocalDateTime effettuataIl) {
 		this.effettuataIl = effettuataIl;
 	}
 
-
 	public LocalDateTime getClienteArrivaIl() {
 		return clienteArrivaIl;
 	}
-
-
 	public void setClienteArrivaIl(LocalDateTime clienteArrivaIl) {
 		this.clienteArrivaIl = clienteArrivaIl;
 	}
 
-
 	public String getRichieste() {
 		return richieste;
 	}
-
-
 	public void setRichieste(String richieste) {
 		this.richieste = richieste;
 	}
 
-
 	public int getNumeroNotti() {
 		return numeroNotti;
 	}
-
-
 	public void setNumeroNotti(int numeroNotti) throws Exception{
 		if( numeroNotti <= 0 ){
 			throw new Exception("Il numero delle notti deve essere maggiore di 0");
 		}
 		this.numeroNotti = numeroNotti;
 	}
+
+
+
 	
+	public Camera getCamera() {
+		return camera;
+	}
+
+
+
+	public void setCamera(Camera camera) {
+		this.camera = camera;
+	}
+
+
+
 	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 	
 	
 	

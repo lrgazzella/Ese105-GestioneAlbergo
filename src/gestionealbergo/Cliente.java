@@ -37,7 +37,6 @@ public class Cliente {
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) throws Exception {
 		if( nome.length() <= 0 ){
 			throw new Exception("Il nome deve essere maggiore di 0 caratteri");
@@ -48,7 +47,6 @@ public class Cliente {
 	public String getCognome() {
 		return cognome;
 	}
-
 	public void setCognome(String cognome) throws Exception {
 		if( cognome.length() <= 0 ){
 			throw new Exception("Il cognome deve essere maggiore di 0 caratteri");
@@ -59,7 +57,6 @@ public class Cliente {
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) throws Exception {
 		if( email.length() <= 0 ){
 			throw new Exception("L'email deve essere maggiore di 0 caratteri");
@@ -70,7 +67,6 @@ public class Cliente {
 	public String getCellulare() {
 		return cellulare;
 	}
-
 	public void setCellulare(String cellulare) throws Exception {
 		if( cellulare.length() <= 0 ){
 			throw new Exception("Il cellulare deve essere maggiore di 0 caratteri");

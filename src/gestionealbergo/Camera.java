@@ -33,7 +33,7 @@ abstract public class  Camera {
 			int mese = arrivo.getMonthValue();
 			int giorno = arrivo.getDayOfMonth();	
 			
-			LocalDateTime partenza = LocalDateTime.of(anno, mese, giorno+numeroNotti, 12, 00); //da migliorare
+			LocalDateTime partenza = LocalDateTime.of(anno, mese, giorno+numeroNotti, 12, 00); //da migliorare(giorno+numeroNotti)
 			
 			if( (partenza.isBefore(dal)!= false) && (arrivo.isAfter(al) != false) ){
 				value = true;
