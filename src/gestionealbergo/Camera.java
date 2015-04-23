@@ -20,6 +20,13 @@ abstract public class  Camera {
 		this.numero = numero;
 	}
 	
+	public Vector<Prenotazione> getPrenotazioni() {
+		return prenotazioni;
+	}
+	public void setPrenotazioni(Vector<Prenotazione> prenotazioni) {
+		this.prenotazioni = prenotazioni;
+	}
+	
 	public void addPrenotazione(Prenotazione prenotazione){
 		this.prenotazioni.addElement(prenotazione);
 	}
@@ -45,6 +52,15 @@ abstract public class  Camera {
 		
 		return value;
 	}
+
+	@Override
+	public String toString() {
+		return "Camera [numero=" + numero + ", prenotazioni=" + prenotazioni
+				+ "]";
+	}
+
+	
+
 	
 	
 }

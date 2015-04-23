@@ -62,32 +62,36 @@ public class Prenotazione {
 		}
 		this.numeroNotti = numeroNotti;
 	}
-
-
-
 	
 	public Camera getCamera() {
 		return camera;
 	}
-
-
-
 	public void setCamera(Camera camera) {
 		this.camera = camera;
+	}
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 
 
 	
-	public Cliente getCliente() {
-		return cliente;
+	@Override
+	public String toString() {
+		return "Prenotazione [arrivoIl=" + arrivoIl.toString() 
+				+ ", effettuataIl=" + effettuataIl.toString() 
+				+ ", clienteArrivaIl=" + clienteArrivaIl.toString()
+				+ ", richieste=" + richieste 
+				+ ", numeroNotti=" + numeroNotti
+				+ ", Camera[numero=" + camera.getNumero() + "]"
+				+ ", Cliente[nome=" + cliente.getNome() + ", cognome=" + cliente.getCognome() + ", email="+ cliente.getEmail() + ", cellulare=" + cliente.getCellulare() 
+				+ "]";
 	}
-
-
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
+	
 	
 	
 	

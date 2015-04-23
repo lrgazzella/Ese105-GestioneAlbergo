@@ -21,7 +21,16 @@ public class Ese105 {
 		prenotazione.setCamera(cameraSingola);
 		cameraSingola.addPrenotazione(prenotazione);
 		
+		
 		Albergo albergo = new Albergo();
+		
+		
+		
+		for(Camera q : albergo.getCamere()){
+			for(Prenotazione a: q.getPrenotazioni()){
+				System.out.println(a.toString());
+			}
+		}
 		
 		
 	}
