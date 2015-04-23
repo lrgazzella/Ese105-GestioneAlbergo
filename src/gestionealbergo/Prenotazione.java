@@ -78,8 +78,6 @@ public class Prenotazione {
 	}
 
 
-
-	
 	@Override
 	public String toString() {
 		return "Prenotazione [arrivoIl=" + arrivoIl.toString() 
