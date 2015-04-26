@@ -41,7 +41,7 @@ abstract public class  Camera {
 	}
 	
 	public boolean isDisponibile(LocalDateTime dal, LocalDateTime al){
-		boolean value = false;
+		boolean value = true;
 		for(Prenotazione q : prenotazioni) {
 			int numeroNotti = q.getNumeroNotti();
 			LocalDateTime arrivo = q.getArrivoIl();
@@ -50,14 +50,15 @@ abstract public class  Camera {
 			int mese = arrivo.getMonthValue();
 			int giorno = arrivo.getDayOfMonth();	
 			
-			LocalDateTime partenza = LocalDateTime.of(anno, mese, giorno+numeroNotti, 12, 00); //da migliorare(giorno+numeroNotti)
+			LocalDateTime partenza = LocalDateTime.of(anno, mese, giorno+numeroNotti, 12, 00); 
 			
-			
-			if( (partenza.isBefore(dal)!= false) && (arrivo.isAfter(al) != false) ){
-				value = true;
-			}else{
+			if ( !dal.isAfter(partenza) && !al.isBefore(arrivo)){
 				value = false;
 			}
+			
+			
+			
+			
 				
 		}
 		

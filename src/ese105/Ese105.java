@@ -21,7 +21,7 @@ public class Ese105 {
 		Prenotazione prenotazioneLorenzo = new Prenotazione(arrivoIl, effettuataIl, clienteArrivaIl, "Nulla", 8);
 		
 		arrivoIl = LocalDateTime.of(2014, 8, 16, 13, 00);
-		effettuataIl = LocalDateTime.of(2015, 4, 22, 22, 24);
+		effettuataIl = LocalDateTime.of(2014, 4, 22, 22, 24);
 		clienteArrivaIl = LocalDateTime.of(2014, 8, 15, 13, 00);
 		
 		Prenotazione prenotazioneFilippo = new Prenotazione(arrivoIl, effettuataIl, clienteArrivaIl, "Nulla", 6);
